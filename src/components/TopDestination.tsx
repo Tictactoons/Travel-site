@@ -27,13 +27,15 @@ const TopDestination = () => {
   ];
 
   return (
-    <section className="py-8 px-8 md:px-12 flex justify-center">
+    <section className="py-8 px-24 md:px-24 flex justify-center">
       <div className="w-full max-w-[1024px]">
-        <h2 className="text-center font-poppins font-medium text-[#5E6282] text-sm mb-4">TOP SELLING</h2>
-      <h2 className="text-3xl font-bold mb-10 text-center font-volkhov">
-        Top Destinations
-      </h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+        <h2 className="text-center font-poppins font-medium text-[#5E6282] text-sm mb-4">
+          TOP SELLING
+        </h2>
+        <h2 className="text-3xl font-bold mb-10 text-center font-volkhov">
+          Top Destinations
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
           {destinations.map((dest) => (
             <Destination
               key={dest.city}

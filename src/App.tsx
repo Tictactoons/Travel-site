@@ -2,6 +2,7 @@ import Book from "./components/Book";
 import Category from "./components/Category";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Sponsors from "./components/Sponsors";
 import TestimonialSection from "./components/TestimonialSection";
 import TopDestination from "./components/TopDestination";
 
@@ -16,6 +17,7 @@ function App() {
         <TopDestination />
         <Book />
         <TestimonialSection />
+        <Sponsors />
       </div>
     </>
   );
