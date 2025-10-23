@@ -10,7 +10,7 @@ const TestimonialSection = () => {
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="font-opensans text-gray-500 text-xs font-semibold mb-4 uppercase tracking-wide">
           Testimonials
@@ -26,7 +26,7 @@ const TestimonialSection = () => {
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <TestimonialCarousel />
       </motion.div>

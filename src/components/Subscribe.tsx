@@ -37,7 +37,7 @@ const Subscribe = () => {
         </div>
 
         <div>
-          <button className="bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white font-light text-xs md:px-7 px-24 py-3.5 rounded-lg hover:bg-blue-700 transition">
+          <button className="bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white font-light text-xs md:px-7 px-24 py-3.5 rounded-lg transition-all duration-200 hover:shadow-sm hover:border-none hover:px-8 hover:py-4">
             Subscribe
           </button>
         </div>

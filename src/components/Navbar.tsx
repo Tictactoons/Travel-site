@@ -5,22 +5,22 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center py-6 w-[80%] sm:w-[90%] md:w-[80%] lg:w-[70%] max-w-[1200px] mx-auto relative">
+    <nav className="flex justify-between items-center py-6 w-[80%] sm:w-[90%] md:w-[80%] lg:w-[80%]  max-w-[1200px] mx-auto sticky top-0 z-50 bg-transparent backdrop-blur-sm">
       <div>
         <h1
           className="text-2xl font-bold tracking-tighter font-opensans"
           style={{ color: "#212832" }}
         >
-          Isaiah
+          Jadoo
         </h1>
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-6 font-poppins text-xs font-light justify-center items-center text-[#212832]">
+      <ul className="hidden md:flex gap-6 font-poppins text-sm font-light justify-center items-center text-[#212832]">
         <li>
           <a
             href=""
-            className="transition-colors duration-200 hover:text-[#5E3BE1] hover:font-normal"
+            className="transition-colors duration-200 hover:text-[#DF6951] hover:font-normal"
           >
             Destination
           </a>
@@ -28,7 +28,7 @@ const Navbar = () => {
         <li>
           <a
             href=""
-            className="transition-colors duration-200 hover:text-[#5E3BE1] hover:font-normal"
+            className="transition-colors duration-200 hover:text-[#DF6951] hover:font-normal"
           >
             Hotels
           </a>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <li>
           <a
             href=""
-            className="transition-colors duration-200 hover:text-[#5E3BE1] hover:font-normal"
+            className="transition-colors duration-200 hover:text-[#DF6951] hover:font-normal"
           >
             Flights
           </a>
@@ -44,7 +44,7 @@ const Navbar = () => {
         <li>
           <a
             href=""
-            className="transition-colors duration-200 hover:text-[#5E3BE1] hover:font-normal"
+            className="transition-colors duration-200 hover:text-[#DF6951] hover:font-normal"
           >
             Bookings
           </a>
@@ -64,7 +64,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Mobile Menu Button */}
+      
       <div className="md:hidden">
         {open ? (
           <X
@@ -81,7 +81,7 @@ const Navbar = () => {
         )}
       </div>
 
-      {/* Mobile Menu */}
+      
       {open && (
         <ul className="absolute top-[70px] left-0 w-full bg-white shadow-md flex flex-col items-center gap-6 py-6 font-poppins text-sm text-[#212832] md:hidden z-50 animate-fadeIn">
           <li>

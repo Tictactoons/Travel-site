@@ -10,7 +10,7 @@ const Footer = () => {
       <div className=" grid grid-cols-1 lg:grid-cols-5 md:grid-cols-4 gap-4 md:items-start items-center">
       
         <div className="flex flex-col items-center md:items-start">   
-          <h2 className="text-2xl font-bold text-[#181E4B] mb-3 ">Isaiah</h2>
+          <h2 className="text-2xl font-bold text-[#181E4B] mb-3 ">Jadoo</h2>
           <p className="text-xs font-light font-poppins text-[#5E6282] text-center md:text-left">
             Your trusted partner for unforgettable travel experiences and
             adventures around the world.

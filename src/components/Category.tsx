@@ -34,7 +34,7 @@ const Category = () => {
     className=""
       initial={{ opacity: 0, y: 50 }}       // start slightly below and invisible
       whileInView={{ opacity: 1, y: 0 }}   // slide up into place
-      viewport={{ once: true }}             // trigger animation only once
+      viewport={{ once: true, amount: 0.3 }}             // trigger animation only once
       transition={{ duration: 1.1, ease: "easeOut" }} // smooth movement
     >
 

@@ -23,7 +23,7 @@ const Destination = ({city, country, price, icon, days, image}: Props) => {
     >
     
     
-  <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[400px] w-full max-w-[350px] mx-auto transition hover:shadow-xl">
+  <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[400px] w-full max-w-[350px] mx-auto transition hover:shadow-xl cursor-pointer">
       <div className="h-[70%] w-full">
         <img src={image} alt={`${city} image`} className="w-full h-full object-cover" />
       </div>

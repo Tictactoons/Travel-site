@@ -17,7 +17,7 @@ const Book = () => {
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <div className="w-full">
           <h2 className="font-opensans text-gray-500 text-sm font-semibold mb-4">
@@ -82,7 +82,7 @@ const Book = () => {
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <div className="">
           <img
