@@ -1,3 +1,6 @@
+
+import { motion } from "framer-motion";
+
 interface Props {
   city: string;
   country: string;
@@ -9,6 +12,17 @@ interface Props {
 
 const Destination = ({city, country, price, icon, days, image}: Props) => {
   return (
+
+    <motion.div
+
+    className="w-full max-w-[350px] mx-auto"
+      initial={{ opacity: 0, y: 50 }}       
+      whileInView={{ opacity: 1, y: 0 }}   
+      viewport={{ once: true }}            
+      transition={{ duration: 1.2, ease: "easeOut" }} 
+    >
+    
+    
   <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[400px] w-full max-w-[350px] mx-auto transition hover:shadow-xl">
       <div className="h-[70%] w-full">
         <img src={image} alt={`${city} image`} className="w-full h-full object-cover" />
@@ -27,6 +41,7 @@ const Destination = ({city, country, price, icon, days, image}: Props) => {
         </div>
       </div>
     </div>
+    </motion.div>
 
   );
 };

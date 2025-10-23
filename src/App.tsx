@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="relative">
-        <img src="/src/assets/Decore.png" alt="" className="absolute top-0 right-0 w-auto h-[500px] object-cover pointer-events-none z-0" />
+        <img src="/src/assets/Decore.png" alt="" className="absolute top-0 right-0  h-[500px] object-cover pointer-events-none z-0" />
         <Navbar/>
         <Hero />
         <Category  />

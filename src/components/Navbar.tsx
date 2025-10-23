@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center py-6 sm:w-[90%] md:w-[80%] lg:w-[70%] max-w-[1200px] mx-auto relative">
+    <nav className="flex justify-between items-center py-6 w-[80%] sm:w-[90%] md:w-[80%] lg:w-[70%] max-w-[1200px] mx-auto relative">
       <div>
         <h1
           className="text-2xl font-bold tracking-tighter font-opensans"
@@ -52,7 +52,7 @@ const Navbar = () => {
         <li>
           <a
             href=""
-            className="transition-colors duration-200 hover:text-[#5E3BE1] hover:font-normal"
+            className="transition-colors duration-200 hover:text-[#DF6951] hover:font-medium hover:text-base"
           >
             Login
           </a>

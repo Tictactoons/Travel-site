@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import ServiceCard from "./ServiceCard";
 import { FaCloudSun, FaPlane, FaCalendarAlt, FaCogs } from "react-icons/fa";
 
@@ -28,17 +29,30 @@ const Category = () => {
 
 
   return (
+
+    <motion.div
+    className=""
+      initial={{ opacity: 0, y: 50 }}       // start slightly below and invisible
+      whileInView={{ opacity: 1, y: 0 }}   // slide up into place
+      viewport={{ once: true }}             // trigger animation only once
+      transition={{ duration: 1.1, ease: "easeOut" }} // smooth movement
+    >
+
+
+
   <div className="py-16 px-6 md:px-16 bg-white w-[90%] md:w-[85%] lg:w-full max-w-[1200px] mx-auto">
       <h2 className="text-center font-poppins font-medium text-[#5E6282] text-sm mb-4">CATEGORY</h2>
       <h2 className="text-3xl font-bold mb-10 text-center font-volkhov">
         We Offer Best Services
       </h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2   lg:grid-cols-4 gap-8 place-items-center">
         {service.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
       </div>
     </div>
+        </motion.div>
+
   );
 };
 

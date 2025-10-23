@@ -1,5 +1,7 @@
 import { FaLocationArrow } from "react-icons/fa";
 import Destination from "./Destination";
+import {motion } from "framer-motion"
+
 
 const TopDestination = () => {
   const destinations = [
@@ -27,6 +29,15 @@ const TopDestination = () => {
   ];
 
   return (
+
+    <motion.div
+    className=""
+      initial={{ opacity: 0, y: 50 }}       // start slightly below and invisible
+      whileInView={{ opacity: 1, y: 0 }}   // slide up into place
+      viewport={{ once: true }}             // trigger animation only once
+      transition={{ duration: 1.1, ease: "easeOut" }} // smooth movement
+    >
+
     <section className="py-8 px-24 md:px-24 flex justify-center">
       <div className="w-full max-w-[1024px]">
         <h2 className="text-center font-poppins font-medium text-[#5E6282] text-sm mb-4">
@@ -49,7 +60,10 @@ const TopDestination = () => {
           ))}
         </div>
       </div>
+    
+
     </section>
+    </motion.div>
   );
 };
 
