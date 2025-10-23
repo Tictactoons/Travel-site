@@ -5,7 +5,7 @@ import {
 
 const Subscribe = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-16 px-6 bg-[#DFD7F9]/20 w-[70%] max-w-[1200px] mx-auto rounded-2xl rounded-tl-[100px] relative mb-20">
+    <section className="flex flex-col items-center justify-center py-16 md:px-6 bg-[#DFD7F9]/20 md:w-[70%] w-full max-w-[350px]  md:max-w-[1200px] mx-auto rounded-2xl rounded-tl-[100px] relative mb-20">
       <img
         src="/public/Mask1.png"
         alt=""
@@ -21,13 +21,13 @@ const Subscribe = () => {
         <FaLocationArrow />
       </div>
 
-      <h2 className="text-2xl md:text-xl font-poppins font-semibold text-center mb-6 max-w-[60%] text-[#5E6282]">
+      <h2 className="text-md md:text-xl font-poppins font-semibold text-center mb-6 max-w-[60%] text-[#5E6282]">
         Subscribe to get information, latest news and other interesting offers
         about Jadoo
       </h2>
 
-      <div className="flex gap-6 items-center">
-        <div className="flex items-center bg-white  rounded-lg overflow-hidden w-full max-w-md px-12 py-4 pl-6">
+      <div className="flex md:gap-6 items-center md:flex-row flex-col gap-3">
+        <div className="flex items-center bg-white  rounded-lg overflow-hidden w-full max-w-md px-12  py-4 pl-6">
           <FaEnvelope className="text-gray-500 mr-2 text-sm" />
           <input
             type="email"
@@ -37,7 +37,7 @@ const Subscribe = () => {
         </div>
 
         <div>
-          <button className="bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white font-light text-xs px-7 py-3.5 rounded-lg hover:bg-blue-700 transition">
+          <button className="bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white font-light text-xs md:px-7 px-24 py-3.5 rounded-lg hover:bg-blue-700 transition">
             Subscribe
           </button>
         </div>

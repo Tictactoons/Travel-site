@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Book = () => {
   return (
-    <section className="py-16 px-12 md:px-20 lg:px-32 max-w-[1300px] mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+    <section className="py-16 px-8 md:px-20 lg:px-32 max-w-[1300px] mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
       <motion.div
         className="md:w-1/2 space-y-6"
         initial={{ opacity: 0, y: 80 }}

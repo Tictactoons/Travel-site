@@ -7,7 +7,7 @@ interface TestimonialProps {
 
 const TestimonialCard = ({ name, role, text, avatar }: TestimonialProps) => {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 w-80 flex flex-col gap-3">
+    <div className="bg-white rounded-2xl shadow-md p-6 md:w-80 flex flex-col gap-3">
       <p className="text-[#5E6282] italic font-poppins font-light text-xs">&quot;{text}&quot;</p>
       <div className="flex items-center gap-3 mt-4">
         <img
