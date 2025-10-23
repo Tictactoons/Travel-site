@@ -32,15 +32,15 @@ const TopDestination = () => {
 
     <motion.div
     className=""
-      initial={{ opacity: 0, y: 50 }}       // start slightly below and invisible
-      whileInView={{ opacity: 1, y: 0 }}   // slide up into place
-      viewport={{ once: true }}             // trigger animation only once
-      transition={{ duration: 1.1, ease: "easeOut" }} // smooth movement
+      initial={{ opacity: 0, y: 50 }}       
+      whileInView={{ opacity: 1, y: 0 }}   
+      viewport={{ once: true }}            
+      transition={{ duration: 1.1, ease: "easeOut" }}
     >
 
-    <section className="py-16 px-16 md:px-16 lg:px-12 flex justify-center">
+    <section className="py-8 px-14 md:px-16 lg:px-12 flex justify-center">
       <div className="w-full max-w-[1024px]">
-        <h2 className="text-center font-poppins font-medium text-[#5E6282] text-sm mb-4">
+        <h2 className="text-center font-poppins font-medium text-[#5E6282] text-sm mb-2">
           TOP SELLING
         </h2>
         <h2 className="text-3xl font-bold mb-10 text-center font-volkhov">

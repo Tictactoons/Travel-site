@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between w-[80%] lg:w-[70%] max-w-[1200px] mx-auto py-16 relative overflow-hidden">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between w-[80%] lg:w-[70%] max-w-[1200px] mx-auto py-8 relative overflow-hidden">
       {/* Left Side - Text */}
       <motion.div
         className="md:w-1/2 mb-8 md:mb-0"

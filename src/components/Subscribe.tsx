@@ -5,7 +5,7 @@ import {
 
 const Subscribe = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-16 md:px-6 bg-[#DFD7F9]/20 md:w-[70%] w-full max-w-[350px]  md:max-w-[1200px] mx-auto rounded-2xl rounded-tl-[100px] relative mb-20">
+    <section className="flex flex-col items-center justify-center py-16 md:px-6 bg-[#DFD7F9]/20 md:w-[70%] w-full max-w-[310px]  md:max-w-[1200px] mx-auto rounded-2xl rounded-tl-[100px] relative mb-20">
       <img
         src="/public/Mask1.png"
         alt=""

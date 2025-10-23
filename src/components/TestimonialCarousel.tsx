@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
@@ -25,34 +26,49 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState("next");
 
   const handlePrev = () => {
+    setDirection("prev");
     setCurrentIndex((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
     );
   };
 
   const handleNext = () => {
+    setDirection("next");
     setCurrentIndex((prev) =>
       prev === testimonials.length - 1 ? 0 : prev + 1
     );
   };
 
   return (
-    <div className="flex items-center gap-4">
-      <TestimonialCard {...testimonials[currentIndex]} />
+    <div className="flex items-center justify-center gap-4">
+      <div className="relative w-full max-w-md">
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, y: direction === "next" ? 40 : -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: direction === "next" ? -40 : 40 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+          >
+            <TestimonialCard {...testimonials[currentIndex]} />
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
-      <div className="flex flex-col gap-8"> 
+      <div className="flex flex-col gap-8">
         <button
           onClick={handlePrev}
-          className=" text-[#BCB7C2] p-2 rounded-full hover:bg-[#DFD7F9]"
+          className="text-[#BCB7C2] p-2 rounded-full hover:bg-[#DFD7F9] transition-all duration-200 hover:scale-110"
         >
           <FaArrowUp />
         </button>
 
         <button
           onClick={handleNext}
-          className="text-[#3E2E4D] p-2 rounded-full hover:bg-[#DFD7F9]"
+          className="text-[#3E2E4D] p-2 rounded-full hover:bg-[#DFD7F9] transition-all duration-200 hover:scale-110"
         >
           <FaArrowDown />
         </button>

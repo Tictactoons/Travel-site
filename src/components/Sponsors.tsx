@@ -20,8 +20,8 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-white py-10 px-12 md:px-32 lg:px-52">
-      <h2 className="text-center text-2xl px-12 font-medium mb-8 font-opensans text-[#5E6282]">
+    <div className="w-full overflow-hidden bg-white py-8 px-12 md:px-32 lg:px-52">
+      <h2 className="text-center text-2xl px-12 font-medium mb-6 font-opensans text-[#5E6282]">
         Trusted by leading brands
       </h2>
       <div className="relative flex overflow-hidden">
