@@ -38,7 +38,7 @@ const TopDestination = () => {
       transition={{ duration: 1.1, ease: "easeOut" }} // smooth movement
     >
 
-    <section className="py-8 px-24 md:px-24 flex justify-center">
+    <section className="py-16 px-24 md:px-24 flex justify-center">
       <div className="w-full max-w-[1024px]">
         <h2 className="text-center font-poppins font-medium text-[#5E6282] text-sm mb-4">
           TOP SELLING

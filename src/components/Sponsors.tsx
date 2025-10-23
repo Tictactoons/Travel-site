@@ -20,13 +20,13 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-white py-10 px-32">
-      <h2 className="text-center text-2xl font-medium mb-8 font-opensans text-[#5E6282]">
+    <div className="w-full overflow-hidden bg-white py-10 px-12 md:px-32">
+      <h2 className="text-center text-2xl px-12 font-medium mb-8 font-opensans text-[#5E6282]">
         Trusted by leading brands
       </h2>
       <div className="relative flex overflow-hidden">
         {/* animation container */}
-        <div className="flex animate-scroll gap-16">
+        <div className="flex animate-scroll gap-16 ">
           {sponsors.concat(sponsors).map((logo, index) => (
             <img
               key={index}

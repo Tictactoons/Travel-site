@@ -1,11 +1,6 @@
 import {
-  FaArrowCircleRight,
-  FaArrowRight,
   FaEnvelope,
   FaLocationArrow,
-  FaPaperPlane,
-  FaPlane,
-  FaTelegram,
 } from "react-icons/fa";
 
 const Subscribe = () => {
